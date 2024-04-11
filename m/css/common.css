@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* 기본스타일 3가지(폰트,색상,링크) */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+  --main_color : #D91226;
+  --txt_color01 : #333;
+  --font_size_13 : 13px;
+}
+body{
+  font-family: "Noto Sans KR","Nanum Gothic", sans-serif;
+  font-size: var(--font_size_13);
+  color: var(--txt_color01);
+  line-height: 160%;
+  scroll-behavior: smooth;
+}
+a{
+  color: var(--txt_color01);
+  text-decoration: none;
+}
+
+/* 헤더 서식 */
+header{
+  width: 100%;height: 70px; 
+  background-color: var(--main_color);
+  position:relative;
+}
+header > h1{
+  width:70px;height:50px;
+	padding:10px 0px 0px 10px;
+  margin: 0 auto;
+}
+header > h1 > a> img{width: 100%; height: 100%;}
+
+/* 토글버튼서식 */
+.total_btn{
+  position:absolute;
+  right:14px;top:15px;
+}
+.fa-bars{font-size:30px;padding-top: 5px;}
+#toggle{display:none;}
+
+/* gnb메뉴 서식 */
+.gnb{
+  width:100%;height:100%;
+  position:fixed;
+  background:rgba(0,0,0,0.7);
+  padding-left:30%;
+  box-sizing: border-box;
+  left:100%;top:0px;
+  transition:0.3s;
+  z-index: 100;
+}
+/* 토글버튼 클릭시 gnb의 위치가 left:0으로 위치가 이동 */
+#toggle:checked + header > .gnb{
+  left:0px;
+}
+
+.gnb > ul{
+  width:100%;height:100%;
+  padding-top:100px;
+  background:#f8f8f1;
+}
+.gnb > ul > li{
+  line-height:40px;
+  border-bottom:1px solid #ccc;
+  text-indent:10px;
+}
+.gnb > ul > li > a{
+  font-size:1.1rem; /* 1rem = 16px */
+  display:block;
+  line-height:40px;
+}
+.gnb > ul > li > a:hover{}
+
+.gnb .fa-angle-down{
+  float:right;
+  padding:10px;
+}
+
+/* 닫기버튼 */
+.gnb .fa-times{
+  font-size:40px;
+  color:#fff;
+  position:absolute;
+  left:3%;top:3%;
+  transition:0.4s;
+}
+.gnb .fa-times:hover{
+  transform:rotate(180deg);
+}
+
+
+
+
+
+/* 푸터 서식 */
+
+footer{
+  background-color: #585858;
+  color: #fff;
+  width: 100%; height: 260px;
+  font-size: 11px;
+}
+/* 푸터 상단 서식 */
+.f_top{
+  /* background-color: red; */
+  width: 390px;height:70px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.f_top > nav > ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.f_top > nav > ul > li{
+  text-align: left;
+  padding: 0px 10px;
+}
+.f_top > nav > ul > li::after{
+  display: block;
+  content: "";
+  width: 1px;height: 10px;
+  background-color: #ccc;
+  position: relative; top: -15px;
+}
+.f_top > nav > ul:first-child > li:first-child::after{left: 90px;}
+.f_top > nav > ul:first-child > li:nth-child(2)::after{left: 80px;}
+.f_top > nav > ul:first-child > li:nth-child(3)::after{display: none;}
+.f_top > nav > ul:nth-child(2) > li:nth-child(1)::after{left: 100px;}
+.f_top > nav > ul:nth-child(2) > li:nth-child(2)::after{left: 50px;}
+.f_top > nav > ul:nth-child(2) > li:nth-child(3)::after{left: 50px;}
+.f_top > nav > ul:nth-child(2) > li:nth-child(4)::after{left: 50px;}
+.f_top > nav > ul:nth-child(2) > li:last-child::after{display: none;}
+.f_top > nav > ul > li > a{color: #fff;}
+.sns{
+  /* background-color: pink; */
+  width: 390px; height: 33px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+.sns > li{
+  /* background-color: bisque; */
+  padding-left: 0px;
+}
+.sns > li > a > i{
+  /* background-color: yellow; */
+  transform:scale(1.5);
+  color: #fff;
+}
+.sns > li:first-child > a > i{
+  /* background-color: red; */
+  position: absolute;
+  left: 10px; top: 10px;
+  
+}
+.sns > li:last-child > a > i{
+  position: absolute;
+  left: 35px; top: 10px;
+}
+.f_bottom{
+  /* background-color: green; */
+  width: 390px;height: 120px;
+  margin: 0 auto;
+  margin-top: 10px;
+}

@@ -29,15 +29,36 @@
 </head>
 
 <body>
+  <input type="checkbox" id="toggle">
   <!-- 헤더 영역 시작 -->
   <header id="header">
-    <div class="h_top">
       <h1>
         <a href="index.html" title="메인페이지로 바로가기">
           <img src="../images/logo_white.png" alt="로고이미지" id="h1_img">
         </a>
       </h1>
-    </div>
+      <label for="toggle" class="total_btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- 전체메뉴 -->
+    <nav class="gnb">
+      <label for="toggle" class="fas fa-times"></label>
+      <ul>
+        <li><label for="toggle1">메뉴1</label><input type="checkbox" id="toggle1"><i class='fas fa-angle-down'></i>
+          <ul class="sub">
+            <li><a href="#" title="sub">서브메뉴</a></li>
+            <li><a href="#" title="sub">서브메뉴</a></li>
+            <li><a href="#" title="sub">서브메뉴</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="메뉴">메뉴2</a></li>
+        <li><a href="#" title="메뉴">메뉴3</a></li>
+        <li><a href="#" title="메뉴">메뉴4</a></li>
+        <li><a href="#" title="메뉴">메뉴5</a></li>
+        <li><a href="#" title="메뉴">메뉴6</a></li>
+        <li><a href="#" title="메뉴">메뉴7</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- 메인 영역 시작 -->
@@ -50,27 +71,25 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="" title="">
-              <img src="./images/mainBanner_01.jpg" alt="메인슬라이드이미지01">
+              <img src="../images/mobile_mainbanner01.png" alt="메인슬라이드이미지01">
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" title="">
-              <img src="./images/mainBanner_02.jpg" alt="메인슬라이드이미지02">
+              <img src="../images/mobile_mainbanner02.png" alt="메인슬라이드이미지02">
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" title="">
-              <img src="./images/mainBanner_03.jpg" alt="메인슬라이드이미지03">
+              <img src="../images/mobile_mainbanner03.png" alt="메인슬라이드이미지03">
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" title="">
-              <img src="./images/mainBanner_04.jpg" alt="메인슬라이드이미지04">
+              <img src="../images/mobile_mainbanner04.png" alt="메인슬라이드이미지04">
             </a>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </article>
@@ -84,7 +103,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu01.png" alt="">
+                  <img src="../images/menu01.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -94,7 +113,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu16.png" alt="">
+                  <img src="../images/menu16.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -104,7 +123,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu02.png" alt="">
+                  <img src="../images/menu02.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -114,7 +133,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu03.png" alt="">
+                  <img src="../images/menu03.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -124,7 +143,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu04.png" alt="">
+                  <img src="../images/menu04.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -135,7 +154,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu17.png" alt="">
+                  <img src="../images/menu17.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -146,7 +165,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu19.png" alt="">
+                  <img src="../images/menu19.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -156,7 +175,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu18.png" alt="">
+                  <img src="../images/menu18.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -166,7 +185,7 @@
             <div class="card swiper-slide">
               <div class="card_image_box">
                 <a href="" title="이미지">
-                  <img src="./images/menu25.png" alt="">
+                  <img src="../images/menu25.png" alt="">
                 </a>
               </div>
               <div class="card_details">
@@ -187,17 +206,10 @@
         <div class="swiper mySwiper3">
           <div class="card2-wrapper swiper-wrapper">
             <div class="card2 swiper-slide">
-              <div class="main_card">
-                <a href="" title="쿠키몬스터 쏘스윗박스">쿠키몬스터<br>쏘스윗박스</a>
-                <a href="" title="쿠키몬스터 쏘스윗박스">
-                  <img src="./images/menu20.png" alt="쿠키몬스터 쏘스윗박스">
-                </a>
-                <p>Om nom nom!<br>쿠키몬스터와 함께 즐기는<br>달달한 초코 쿠키 쏘스윗박스</p>
-              </div>
               <div class="sub_wrap">
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu21.png" alt="빅버드의 애플망고 스무디">
+                    <img src="../images/menu21.png" alt="빅버드의 애플망고 스무디">
                   </div>
                   <div class="card2_details">
                     <a href="" title="빅버드의 애플망고 스무디">빅버드의<br> 애플망고 스무디</a>
@@ -207,7 +219,7 @@
                 </div>
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu22.png" alt="엘모의 딸기 스무디">
+                    <img src="../images/menu22.png" alt="엘모의 딸기 스무디">
                   </div>
                   <div class="card2_details">
                     <a href="" title="엘모의 딸기 스무디">엘모의<br>딸기 스무디</a>
@@ -215,9 +227,13 @@
                   </div>
                   <a href="" title="상품으로 바로가기"><i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="sub_wrap">
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu23.png" alt="엘모의 컵텀블러(레드)">
+                    <img src="../images/menu23.png" alt="엘모의 컵텀블러(레드)">
                   </div>
                   <div class="card2_details">
                     <a href="" title="엘모의 컵텀블러(레드)">엘모의 컵텀블러<br>(레드)</a>
@@ -227,7 +243,7 @@
                 </div>
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu24.png" alt="세서미 파우치(옐로우)">
+                    <img src="../images/menu24.png" alt="세서미 파우치(옐로우)">
                   </div>
                   <div class="card2_details">
                     <a href="" title="세서미 파우치(옐로우)">세서미 파우치<br>(옐로우)</a>
@@ -238,22 +254,10 @@
               </div>
             </div>
             <div class="card2 swiper-slide">
-              <div class="main_card">
-                <a href="" title="푸딩에 반하나
-                쏘스윗박스">푸딩에 반하나
-                  <br>쏘스윗박스</a>
-                <a href="" title="푸딩에 반하나
-                쏘스윗박스">
-                  <img src="./images/menu26.png" alt="푸딩에 반하나
-                  쏘스윗박스">
-                </a>
-                <p>부드럽고 달콤한<br> 바나나맛 커스터드 크림에<br>
-                  반해버린 케이크</p>
-              </div>
               <div class="sub_wrap">
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu01.png" alt="행운이 쑥쑥라떼">
+                    <img src="../images/menu01.png" alt="행운이 쑥쑥라떼">
                   </div>
                   <div class="card2_details">
                     <a href="" title="행운이 쑥쑥라떼">행운이<br>쑥쑥라떼<br></a>
@@ -263,7 +267,7 @@
                 </div>
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu16.png" alt="골든볼 용과 스무디">
+                    <img src="../images/menu16.png" alt="골든볼 용과 스무디">
                   </div>
                   <div class="card2_details">
                     <a href="" title="골든볼 용과 스무디">골든볼<br>용과 스무디</a>
@@ -271,9 +275,13 @@
                   </div>
                   <a href="" title="상품으로 바로가기"><i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="sub_wrap">
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu02.png" alt="럭키 데이지 머스캣 티">
+                    <img src="../images/menu02.png" alt="럭키 데이지 머스캣 티">
                   </div>
                   <div class="card2_details">
                     <a href="" title="럭키 데이지 머스캣 티">럭키 데이지<br>머스캣 티</a>
@@ -283,7 +291,7 @@
                 </div>
                 <div class="sub_card">
                   <div class="card2_image_box">
-                    <img src="./images/menu03.png" alt="유자 블로썸 오로라 티">
+                    <img src="../images/menu03.png" alt="유자 블로썸 오로라 티">
                   </div>
                   <div class="card2_details">
                     <a href="" title="유자 블로썸 오로라 티">유자 블로썸<br>오로라 티</a>
@@ -315,10 +323,9 @@
 
         <div class="tab_con_innerwrap">
           <div class="con01">
-            <img src="./images/sub_banner01.png" alt="푸드카데고리 이미지">
             <div class="con_innerbox_wrap">
               <div class="con_innerbox">
-                <img src="./images/menu13.png" alt="카페아메리카노">
+                <img src="../images/menu13.png" alt="카페아메리카노">
                 <ul>
                   <li>커피</li>
                   <li>카페아메리카노</li>
@@ -341,7 +348,7 @@
                 </div>
               </div>
               <div class="con_innerbox">
-                <img src="./images/menu14.png" alt="카페라떼">
+                <img src="../images/menu14.png" alt="카페라떼">
                 <ul>
                   <li>커피</li>
                   <li>카페라떼</li>
@@ -363,36 +370,12 @@
                   </div>
                 </div>
               </div>
-              <div class="con_innerbox">
-                <img src="./images/menu15.png" alt="카라멜마끼아또">
-                <ul>
-                  <li>커피</li>
-                  <li>카라멜마끼아또</li>
-                  <li>6,200원</li>
-                  <li>모바일쿠폰</li>
-                </ul>
-                <div class="btn_wrap">
-                  <div class="btn_like">
-                    <input type="checkbox" id="btn_like3">
-                    <label for="btn_like3">찜하기</label>
-                  </div>
-                  <div class="btn_cart">
-                    <a href="" title="장바구니">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </a>
-                  </div>
-                  <div class="btn_buy">
-                    <a href="" title="구매하기">구매하기</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="con02">
-            <img src="./images/sub_banner02.png" alt="푸드카데고리 이미지">
             <div class="con_innerbox_wrap">
               <div class="con_innerbox">
-                <img src="./images/menu10.png" alt="민트 초코칩 할리치노">
+                <img src="../images/menu10.png" alt="민트 초코칩 할리치노">
                 <ul>
                   <li>할리치노</li>
                   <li>민트 초코칩 할리치노</li>
@@ -415,7 +398,7 @@
                 </div>
               </div>
               <div class="con_innerbox">
-                <img src="./images/menu11.png" alt="딸기 치즈케익 할리치노">
+                <img src="../images/menu11.png" alt="딸기 치즈케익 할리치노">
                 <ul>
                   <li>할리치노</li>
                   <li>딸기 치즈케익 할리치노</li>
@@ -437,36 +420,12 @@
                   </div>
                 </div>
               </div>
-              <div class="con_innerbox">
-                <img src="./images/menu12.png" alt="제주 말차 할리치노">
-                <ul>
-                  <li>할리치노</li>
-                  <li>제주 말차 할리치노</li>
-                  <li>6,300원</li>
-                  <li>모바일쿠폰</li>
-                </ul>
-                <div class="btn_wrap">
-                  <div class="btn_like">
-                    <input type="checkbox" id="btn_like6">
-                    <label for="btn_like6">찜하기</label>
-                  </div>
-                  <div class="btn_cart">
-                    <a href="" title="장바구니">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </a>
-                  </div>
-                  <div class="btn_buy">
-                    <a href="" title="구매하기">구매하기</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="con03">
-            <img src="./images/sub_banner03.png" alt="푸드카데고리 이미지">
             <div class="con_innerbox_wrap">
               <div class="con_innerbox">
-                <img src="./images/menu05.png" alt="더블 햄치즈 크루아상">
+                <img src="../images/menu05.png" alt="더블 햄치즈 크루아상">
                 <ul>
                   <li>푸드</li>
                   <li>더블 햄치즈 크루아상</li>
@@ -489,7 +448,7 @@
                 </div>
               </div>
               <div class="con_innerbox">
-                <img src="./images/menu06.png" alt="수플레 오믈렛 라이스">
+                <img src="../images/menu06.png" alt="수플레 오믈렛 라이스">
                 <ul>
                   <li>푸드</li>
                   <li>수플레 오믈렛 라이스</li>
@@ -500,29 +459,6 @@
                   <div class="btn_like">
                     <input type="checkbox" id="btn_like8">
                     <label for="btn_like8">찜하기</label>
-                  </div>
-                  <div class="btn_cart">
-                    <a href="" title="장바구니">
-                      <i class="fa-solid fa-bag-shopping"></i>
-                    </a>
-                  </div>
-                  <div class="btn_buy">
-                    <a href="" title="구매하기">구매하기</a>
-                  </div>
-                </div>
-              </div>
-              <div class="con_innerbox">
-                <img src="./images/menu07.png" alt="자이언트 페퍼로니 프레즐">
-                <ul>
-                  <li>푸드</li>
-                  <li>자이언트 페퍼로니 프레즐</li>
-                  <li>4,900원</li>
-                  <li>모바일쿠폰</li>
-                </ul>
-                <div class="btn_wrap">
-                  <div class="btn_like">
-                    <input type="checkbox" id="btn_like9">
-                    <label for="btn_like9">찜하기</label>
                   </div>
                   <div class="btn_cart">
                     <a href="" title="장바구니">
@@ -560,10 +496,6 @@
           <li><a href="" title="주차장">&#x0023;주차장</a></li>
         </ul>
         <a href="" title="매장검색페이지로 바로가기">더보기</a>
-        <div class="store_image">
-          <img src="./images/map.png" alt="지도이미지">
-          <img src="./images/map_ico.png" alt="맵아이콘">
-        </div>
       </div>
     </section>
     <!-- 6. HOLLYS SNS 콘텐츠 -->
@@ -571,14 +503,12 @@
       <h2>HOLLYS SNS</h2>
       <h3>할리스의 SNS를 확인해보세요</h3>
       <ul class="gallery">
-        <li><a href="" title="sns"><img src="./images/sns12.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns13.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns10.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns15.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns14.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns16.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns09.jpg" alt="sns이미지"></a></li>
-        <li><a href="" title="sns"><img src="./images/sns02.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns12.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns13.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns10.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns15.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns14.jpg" alt="sns이미지"></a></li>
+        <li><a href="" title="sns"><img src="../images/sns16.jpg" alt="sns이미지"></a></li>
       </ul>
     </section>
     <!-- 7. 창업안내 콘텐츠 -->
@@ -622,6 +552,8 @@
           <li><a href="" title="">개인정보처리방침</a></li>
           <li><a href="" title="">서비스이용약관</a></li>
           <li><a href="" title="">멤버십이용약관</a></li>
+        </ul>
+        <ul>
           <li><a href="" title="">할리스카드이용약관</a></li>
           <li><a href="" title="">고객문의</a></li>
           <li><a href="" title="">고객설문</a></li>
@@ -674,8 +606,8 @@
     });
     // 베스트셀러 스와이퍼
     var swiper = new Swiper(".mySwiper2", {
-      slidesPerView: 4,
-      spaceBetween: 30,
+      slidesPerView: 2,
+      spaceBetween: 10,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
