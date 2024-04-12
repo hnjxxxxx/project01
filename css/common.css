@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 기본스타일 3가지(폰트,색상,링크) */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root{
+  --main_color : #D91226;
+  --txt_color01 : #333;
+  --font_size_13 : 13px;
+}
+body{
+  font-family: "Noto Sans KR","Nanum Gothic", sans-serif;
+  font-size: var(--font_size_13);
+  color: var(--txt_color01);
+  line-height: 160%;
+  scroll-behavior: smooth;
+}
+a{
+  color: var(--txt_color01);
+  text-decoration: none;
+}
+
+/* 헤더 서식 */
+header{width: 100%;height: 160px; background-color: #fff;}
+/* 헤더상단영역 서식 */
+.h_top{
+  width: 1260px;height: 110px;
+  margin: 0 auto;
+  /* background-color: yellow; */
+  position: relative;
+}
+.h_top > h1{
+  width: 90px;height: 90px;
+  margin: 0 auto;
+  /* padding-top: 55px; */
+  transform: translateY(40px);
+}
+.h_top > h1 > a{
+  margin: 0 auto;
+}
+.h_top > h1 > a > img{
+  width: 85px;height: 60px;
+  margin: 0 auto;
+  /* background-color: blue; */
+}
+/* .h_top > .h_top_l_nav{position: relative;} */
+.h_top > .h_top_l_nav > ul{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  position: absolute;
+  left: 0px;top: 10px;
+  /* transform: translate(0, -80px); */
+  /* background-color: #ccc; */
+}
+.h_top > .h_top_r_nav > ul{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  position: absolute;
+  right: 0px;top: 10px;
+  /* transform: translate(860px, -86px); */
+}
+/* 헤더하단영역 서식 */
+#h_bottom{
+  width: 100%;height: 50px;
+  
+  overflow: hidden;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+}
+#h_bottom:hover{
+  height: 390px;
+}
+/* #h_bottom:hover + #gnb{background-color:#D91226;} */
+#gnb{
+  /* width:1260px; */
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+#gnb > ul{
+  width: 1260px;height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  /* background-color: red; */
+  
+}
+#gnb > ul > li{
+  width: 1260px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 46px;
+  /* background-color: yellow; */
+}
+#gnb > ul > li > ul{
+  /* background-color: yellowgreen; */
+}
+.sub{
+  font-size: 14px;
+  font-weight: 400;
+  width: 180px; height: 330px;
+  margin: 0 auto;
+  /* background-color: blue; */
+  transform: translateY(2px);
+  /* position: absolute; */
+}
+/* .sub{
+  position: absolute; /*블럭요소에 absolute주면 가로값이 사라짐 */
+  /* width: 100%;
+  left: 0;
+} */ 
+.sub a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+/* 푸터 서식 */
+
+footer{
+  background-color: #585858;
+  color: #fff;
+  width: 100%; height: 200px;
+}
+/* 푸터 상단 서식 */
+.f_top{
+  /* background-color: red; */
+  width: 1260px;height:40px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.f_top > nav > ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.f_top > nav > ul > li{
+  text-align: center;
+  padding: 0px 30px;
+}
+.f_top > nav > ul > li::after{
+  display: block;
+  content: "";
+  width: 1px;height: 10px;
+  background-color: #ccc;
+  position: relative; top: -15px;
+}
+.f_top > nav > ul > li:first-child::after{left: 120px;}
+.f_top > nav > ul > li:nth-child(2)::after{left: 110px;}
+.f_top > nav > ul > li:nth-child(3)::after{left: 115px;}
+.f_top > nav > ul > li:nth-child(4)::after{left: 140px;}
+.f_top > nav > ul > li:nth-child(5)::after{left: 80px;}
+.f_top > nav > ul > li:nth-child(6)::after{left: 80px;}
+.f_top > nav > ul > li:nth-child(7)::after{left: 76px;}
+.f_top > nav > ul > li:last-child::after{display: none;}
+.f_top > nav > ul > li > a{color: #fff;}
+.sns{
+  /* background-color: pink; */
+  width: 1260px; height: 40px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+.sns > li{
+  /* background-color: bisque; */
+  padding-left: 10px;
+}
+.sns > li > a > i{
+  /* background-color: yellow; */
+  transform:scale(1.5);
+  color: #fff;
+}
+.sns > li:first-child > a > i{
+  /* background-color: red; */
+  position: absolute;
+  left: 10px; top: 10px;
+  
+}
+.sns > li:last-child > a > i{
+  position: absolute;
+  left: 35px; top: 10px;
+}
+.f_bottom{
+  /* background-color: green; */
+  width: 1260px;height: 100px;
+  margin: 0 auto;
+}
